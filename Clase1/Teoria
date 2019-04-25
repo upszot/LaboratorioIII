@@ -1,0 +1,37 @@
+HTML
+CSS
+JS
+
+ajax -> java asincronico
+json
+jquery
+Boostrap ->
+TS(TypeScript) -> se usa en angular
+bower -> administrador de paquetes
+
+-------------------
+web:
+
+favicon         -> propios iconos
+etiquetas hojas de estilo -> stylesheet
+p>lorem*10      -> texto simulado por 10
+shift+alt+f     -> formatea codigo
+CTRL+k+c        -> comentar / descomentar 
+
+----------HTML -------
+ul>li*3         -> listas desordenadas
+ol>li*3         -> listas ordenadas
+dd>dt*2         -> lista de definiciones
+
+li              -> list item
+dt              -> definition table
+
+table           -> tabla
+    tr              -> filas
+    th              -> columnas
+
+
+etiquetas:
+spam    -> etiquetas contenedoras de inline
+div     -> etiqueta contenedoras de bloque  
+pre     -> preformateado... respeta el formato (enter tab... etc)
