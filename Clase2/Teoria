@@ -10,7 +10,8 @@ input:
         submit: boton
         password: mete asteriscos
         text:   texto
-
+        <input type="reset"> // limpia formularios
+        
 Label:
     Etiqueta: 
     ID: 1 por archivo, no se puede repetir (toma la 1ra)
@@ -22,6 +23,8 @@ fielset: Es para Agrupar controles
     Etiquetas:
         legend
 
+
+#----- JS ----#
 Agregar manejador de eventos en el load de la pagina
     window.addEventListener('load',inicializarEventos);
     //Cuando la ventana termina de renderizar lanza el evento load
@@ -33,5 +36,10 @@ NOTA:
 
     * document -> es la referencia al documento que nos invoco (document.getElementById)
     * document.getElementsByTagName('form')[0] -> devuelve array con elementos del formulario
+    * function(){}  -> funcion anonima
+    * e.preventDefault -> bloquea comportamiento por defecto de un evento
 
+funcion de flecha gorda:  ()=>
 
+#========================================
+ctrl + k + c   -> comenta linea

@@ -1,0 +1,49 @@
+h1,
+h2 {
+    /* esta es la forma correcta */
+    /* concatenar etiquetas */
+    background-color: teal;
+    color: white;
+}
+
+h2 {
+    /*color: chartreuse;*/
+    /*color: rgb(red, green, blue);*/
+    /* el ultimo valor le da que transparente es*/
+    /*background-color: rgba(16, 211, 81, 50%);*/
+    background-color: #549ff5b4;
+}
+
+.azul {
+    color: blue;
+}
+
+#enlace {
+    color: red;
+}
+
+* {
+    /* el *  es el selector universal*/
+    color: blueviolet;
+}
+
+span {
+    color: orange;
+}
+
+p span {
+    /* Todas las etiquetas span que estan dentro de la etiqueta p */
+    color: darkgreen;
+}
+
+p>span {
+    /* Todas las etiquetas span que son hijas de la etiqueta p */
+    color: brown;
+}
+
+
+/* si se da el caso de que tiene el mismo valor de Selector Specificity, el de abajo pisa al de arriba  */
+
+p a span {
+    color: black;
+}

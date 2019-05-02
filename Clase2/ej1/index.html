@@ -8,19 +8,44 @@
     <title>Formularios</title>
 </head>
 <body>
-    <form action="pagina2.html" method="get">
-
-        <fieldset >
+    <form action="pagina2.html" method="Get">
+        <fieldset>
             <legend>Login</legend>
+
             <label for="txtNombre">Nombre:</label>
-            <input type="text" name="Nombre" id="txtNombre" placeholder="ingrese nombre aqui" ><br><br>
-
+            <input type="text" id="txtNombre" name="nombre" placeholder="Ingrese nombre aquí" required><br><br>
+    
             <label for="txtClave">Password:</label>
-            <input type="password" name="Clave" id="txtClave" placeholder="ingrese Clave aqui" >
-        </fieldset>        
-        
-        <br><input type="submit" value="Loguearse">
+            <input type="password" id="txtClave" name="clave" placeholder="Ingrese clave aquí"><br><br>
 
-    </form>    
+            <label for="txtMail">Mail:</label>
+            <input type="email" id="txtMail" name="mail" placeholder="Ingrese e-mail aquí">
+        </fieldset>
+
+        <legend>Conocimientos</legend>
+        <fieldset>           
+            <label for="chkCss">CSS:</label>
+            <input type="checkbox" name="css" id="chkCss">
+            <label for="chkJs">JS:</label>
+            <input type="checkbox" name="js" id="chkJs">
+            <label for="chkHtml">HTML:</label>
+            <input type="checkbox" name="html" id="chkHtml">
+        </fieldset>
+
+        <fieldset>
+            <legend>Sexo</legend>
+
+            <!-- En los radio button se agrega el value para poder leer la opción seleccionada desde el servidor -->
+            <label for="rdoFemenino">Femenino:</label>
+            <input type="radio" name="sexo" id="rdoFemenino" value="F"> 
+            <label for="rdoMasculino">Masculino:</label>
+            <input type="radio" name="sexo" id="rdoMasculino" value="M">
+
+        </fieldset>
+
+        <br><input type="submit" value="Loguearse">
+        <input type="reset"> 
+    </form>   
+    <div id="info">    </div>
 </body>
 </html>
