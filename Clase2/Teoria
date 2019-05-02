@@ -1,0 +1,37 @@
+get  -> cuando pida datos al servidor
+post -> cuando modifique datos del servidor
+
+formulario: lo que ponga en la propiedad action  va a la URL 
+
+propiedad for del label= al id del label
+
+input:
+    type:
+        submit: boton
+        password: mete asteriscos
+        text:   texto
+
+Label:
+    Etiqueta: 
+    ID: 1 por archivo, no se puede repetir (toma la 1ra)
+    placeholder -> 
+    readonly    -> toma foco pero no deja escribir
+    disabled    -> nisiquiera toma foco
+
+fielset: Es para Agrupar controles
+    Etiquetas:
+        legend
+
+Agregar manejador de eventos en el load de la pagina
+    window.addEventListener('load',inicializarEventos);
+    //Cuando la ventana termina de renderizar lanza el evento load
+    // inicializarEventos -> es un puntero a la dir de memoria donde esta cargada la funcion
+
+
+NOTA:
+    * Cuando creo una funcion usar el 2do del inteligence
+
+    * document -> es la referencia al documento que nos invoco (document.getElementById)
+    * document.getElementsByTagName('form')[0] -> devuelve array con elementos del formulario
+
+
