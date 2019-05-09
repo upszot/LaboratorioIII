@@ -1,17 +1,75 @@
-/* Esto seria un hack ... para que quede pegado en la posicion 0,0 de la pagina*/
-
 * {
+    /* Esto seria un hack ... para que quede pegado en la posicion 0,0 de la pagina*/
     margin: 0px;
     padding: 0px;
     border: 0;
 }
 
+body {
+    /* background-image: url("../images/fondo2.png"); */
+}
+
 h1 {
     /* esta es la forma correcta */
     /* concatenar etiquetas */
+    box-sizing: border-box;
     background-color: teal;
     color: white;
-    width: 80%;
+    width: 300px;
     height: 100px;
-    /* margin: 0; */
+    padding: 10px 20px 30px 40px;
+    /* border: 3px solid; */
+    border-width: 3px 10px 60px 40px;
+    border-style: solid;
+    /* border-color: chartreuse; */
+    /* border-left-color: black; */
+    margin: 20px;
+}
+
+.😽 {
+    /* insert emoji... esto se ve como un dibujito pero en realidad es texto */
+    background-color: blueviolet;
+    width: 50px;
+    height: 50px;
+}
+
+.tam {
+    /* clase */
+    width: 100px;
+    height: 100px;
+}
+
+.cajita {
+    background-color: yellow;
+    width: 40px;
+    height: 40px;
+    /* position: fixed; */
+    /* position: absolute; */
+    position: sticky;
+    top: 200px;
+    left: 200px;
+}
+
+#caja1 {
+    /* id */
+    background-color: red;
+    float: left;
+}
+
+#caja2 {
+    background-color: blue;
+    /* relativo a la posicion original del elemento*/
+    /* position: relative; */
+    /* position: sticky; */
+    float: right;
+    top: 10px;
+    left: 80px;
+    /* position: absolute; */
+    opacity: 0.5;
+    clear: both;
+}
+
+#caja3 {
+    background-color: green;
+    float: right;
 }

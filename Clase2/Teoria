@@ -15,7 +15,7 @@ input:
 Label:
     Etiqueta: 
     ID: 1 por archivo, no se puede repetir (toma la 1ra)
-    placeholder -> 
+    placeholder -> leyenda que muestra el control cuando esta vacio
     readonly    -> toma foco pero no deja escribir
     disabled    -> nisiquiera toma foco
 
@@ -43,3 +43,35 @@ funcion de flecha gorda:  ()=>
 
 #========================================
 ctrl + k + c   -> comenta linea
+
+
+========================================================
+Estilos...
+
+Selector Specificity:(x,y,z)
+x,y,z
+| | ----- etiqueta (1)
+|  ------ clase    (10)
+--------- id       (100)
+
+El nro mas grande le gana al mas chico...
+========================================================
+https://caniuse.com/
+Para saber si alguna propiedad de estilos esta soportado por los distintos navegadores.
+
+
+Por reglas de estilo lo recomendable es usar clases para clases
+Ej: cajita y tam
+
+-------------------------------
+Etiquetas semanticas HTML5
+<header>    -> logo de la empresa
+<nav>       -> 
+<main>      -> encapsula el objetivo principal de la pagina
+    <section>   -> distintas secciones del sitio
+        <article>   -> articulos dentro de las secciones
+<footer>    -> pie de pagina
+<aside>     -> barra lateral.. que no tiene mucho que ver con el sitio.. publicidad, tuits, etc
+
+Los motores de busqueda leen de cada pagina, las etiquetas.
+

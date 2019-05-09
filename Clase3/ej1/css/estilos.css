@@ -1,0 +1,42 @@
+.logo {
+    background-color: yellow;
+    height: 80%;
+}
+
+.barra {
+    position: relative;
+    height: 80%;
+    background-color: green;
+}
+
+.body {
+    background-color: blue;
+    float: left;
+    height: 300px;
+    width: 70%;
+}
+
+.secciones {
+    background-color: violet;
+    position: relative;
+    padding: 10px;
+    height: 80px;
+}
+
+.articulos {
+    background-color: grey;
+    margin: auto;
+    height: 20px;
+}
+
+.pie {
+    background-color: purple;
+    clear: both;
+}
+
+.propaganda {
+    background-color: salmon;
+    height: 300px;
+    float: right;
+    width: 30%;
+}
