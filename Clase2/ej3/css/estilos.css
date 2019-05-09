@@ -1,0 +1,17 @@
+/* Esto seria un hack ... para que quede pegado en la posicion 0,0 de la pagina*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+    border: 0;
+}
+
+h1 {
+    /* esta es la forma correcta */
+    /* concatenar etiquetas */
+    background-color: teal;
+    color: white;
+    width: 80%;
+    height: 100px;
+    /* margin: 0; */
+}
