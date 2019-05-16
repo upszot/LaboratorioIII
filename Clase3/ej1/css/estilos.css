@@ -1,42 +1,51 @@
+body {
+    position: relative;
+    height: 950px;
+}
+
 .logo {
     background-color: yellow;
-    height: 80%;
+    height: 10%;
 }
 
 .barra {
-    position: relative;
-    height: 80%;
+    height: 5%;
     background-color: green;
 }
 
-.body {
-    background-color: blue;
-    float: left;
-    height: 300px;
-    width: 70%;
-}
-
-.secciones {
-    background-color: violet;
-    position: relative;
-    padding: 10px;
-    height: 80px;
-}
-
-.articulos {
-    background-color: grey;
-    margin: auto;
-    height: 20px;
-}
-
-.pie {
-    background-color: purple;
-    clear: both;
+.div-medio {
+    height: 75%;
 }
 
 .propaganda {
     background-color: salmon;
-    height: 300px;
+    height: 100%;
+    width: 20%;
     float: right;
-    width: 30%;
+}
+
+.principal {
+    background-color: blue;
+    height: 100%;
+    width: 80%;
+    float: right;
+}
+
+.secciones {
+    background-color: violet;
+    /* position: relative; */
+    margin: 10px;
+    height: 30%;
+    width: 98%;
+}
+
+.articulos {
+    background-color: grey;
+    height: 25%;
+    margin: 5px 20px;
+}
+
+.pie {
+    background-color: purple;
+    height: 10%;
 }
