@@ -1,0 +1,15 @@
+#Dom
+Raiz -> html
+hijos -> head , body
+
+head -> title - > hijo del tipo titulo
+body -> h1 -> con nodo texto , otro nodo p  -> con texto...
+
+-----------------------
+la idea del dom es trabajar en forma dinamica la pagina 
+
+=====================
+Atajos:
+    div#info    ->  <div id="info"></div>
+    crtl + d +d   -> reemplaza palabra en todos los lugares donde este
+    
