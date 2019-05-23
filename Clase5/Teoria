@@ -12,4 +12,7 @@ la idea del dom es trabajar en forma dinamica la pagina
 Atajos:
     div#info    ->  <div id="info"></div>
     crtl + d +d   -> reemplaza palabra en todos los lugares donde este
-    
+
+
+#Generador de datos
+https://mockaroo.com/
