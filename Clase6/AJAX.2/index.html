@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- archivos que llama -->
+    <!--     <link rel="stylesheet" href="./css/normalize.css"> -->
+    <script src="./js/script.js"></script>
+
+    <title>Document</title>
+
+</head>
+
+<body>
+
+    <form action="#">
+        <!-- el formulario te cambia de pagina y no queremos por q AJAX "#" PARA QUE NO HAGA NADA-->
+        <p>
+            <label for="txtNombre"> Nombre<!--  el for era para poder seleccion -->
+                 <input type="text"  id="txtNombre"> <!-- //el name es como viene la variable de cada contro -->
+            </label>
+        </p>
+        <p>
+            <label for="txtApellido"> Apellido
+                   <input type="text"  id="txtApellido"> <!-- //el name es como viene la variable de cada contro -->
+                </label>
+        </p>
+
+        <input type="submit" value="Pasar Datos">
+
+    </form>
+    <div id="info">
+
+    </div>
+</body>
+
+</html>

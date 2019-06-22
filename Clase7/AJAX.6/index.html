@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- archivos que llama -->
+    <!--     <link rel="stylesheet" href="./css/normalize.css"> -->
+    <script src="./js/script.js"></script>
+
+    <title>Document</title>
+
+</head>
+
+<body>
+    <form action="#">
+        <fieldset>
+            <legend>Alta Persona</legend>
+            <table>
+                <tr>
+                    <td><label for="txtNombre">Nombre</label></td>
+                    <td><input type="text" id="txtNombre"></td>
+                </tr>
+                <tr>
+                    <td><label for="txtApellido">Apellido</label></td>
+                    <td><input type="text" id="txtApellido"></td>
+                </tr>
+                <tr>
+                    <td><label for="txtEdad">Edad</label></td>
+                    <td><input type="text" id="txtEdad"></td>
+                </tr>
+                <tr>
+                    <td><input type="submit" value="altaPersona"></td>
+
+                </tr>
+            </table>
+    </form>
+
+    </fieldset>
+
+    <hr id='hr'>
+
+    <fieldset>
+        <legend>Persona Agregada </legend>
+        <table>
+            <tr>
+                <td><label for="id">Id</label></td>
+                <td><input type="text" id="id"></td>
+            </tr>
+            <tr>
+                <td><label for="Nombre">Nombre</label></td>
+                <td><input type="text" id="nombre"></td>
+            </tr>
+            <tr>
+                <td><label for="Apellido">Apellido</label></td>
+                <td><input type="text" id="apellido"></td>
+            </tr>
+            <tr>
+                <td><label for="edad">edad</label></td>
+                <td><input type="text" id="edad"></td>
+            </tr>
+
+        </table>
+        </form>
+
+    </fieldset>
+    <hr>
+    <input type="button" value="Traer Personas" id="getPersonas">
+    <div id="info">
+
+    </div>
+
+</body>
+
+</html>
