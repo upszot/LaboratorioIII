@@ -1,0 +1,181 @@
+* {
+    padding: 0px;
+    font-family: Tahoma;
+    font-size: 14pt;
+}
+
+body {
+    padding: 0px;
+    background-image: url("../imagenes/fondo.jpg");
+    background-size: 100%;
+    font-family: Tahoma;
+    font-size: 14pt;
+}
+
+.logo {
+    background-color: transparent;
+    /*    position: relative; */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /*   float: left */
+}
+
+.boton {
+    padding: 1px;
+    background-color: white;
+    color: blue;
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+input {
+    background-color: white;
+    color: black;
+    font-family: Tahoma;
+    font-size: 10pt;
+}
+
+input {
+    margin-left: 15px;
+}
+
+#tablaListado {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0.75;
+}
+
+#spinner {
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0.75;
+}
+
+tr {
+    border: none;
+}
+
+td.boton {
+    border: none;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.btn {
+    margin: 2px;
+    text-decoration: none;
+    background-color: burlywood;
+    color: black;
+    padding: 10px 30px;
+    display: inline-block;
+    position: relative;
+    border: 1px solid rgba(0, 0, 0, 0.21);
+    border-bottom: 4px solid rgba(0, 0, 0, 0.21);
+    border-radius: 4px;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.15);
+    width: 25%;
+    opacity: 0.5;
+}
+
+.alta {
+    text-align: left;
+    width: 400px;
+    border-collapse: collapse;
+    vertical-align: center;
+    align-items: center;
+    padding: 10px, 10px, 10px, 10px;
+}
+
+.altaForm {
+    text-align: left;
+    width: 400px;
+    border-collapse: collapse;
+    vertical-align: center;
+    align-items: center;
+}
+
+table {
+    text-align: center;
+    border-collapse: collapse;
+}
+
+table.alta table td {
+    opacity: 0.75;
+}
+
+table td {
+    background-color: rgb(49, 24, 71);
+    color: white;
+    border: 1px solid #000000;
+    padding: 8px 12px;
+    opacity: 0.75;
+}
+
+table th {
+    background-color: rgb(184, 189, 189);
+    opacity: 0.9;
+    border: 1px solid #000000;
+    padding: 5px 4px;
+}
+
+#btnMODIFICAR {
+    padding: 5px 5px;
+}
+
+#btnEliminar {
+    padding: 5px 5px;
+}
+
+.campo {
+    margin: 15px;
+    display: block;
+    color: black;
+    width: 90%;
+    height: 30px;
+    font-family: inherit;
+    font-weight: inherit;
+    border: none;
+    border-radius: 5px;
+}
+
+#textoEtiqueta {
+    margin: 20px;
+    font-family: Tahoma;
+    font-size: 12pt;
+    border: 5px;
+    text-transform: capitalize;
+    color: #eceaea;
+    margin: 5px;
+    background-color: transparent;
+    opacity: 1;
+    padding: 5px;
+    top: 2px;
+}
+
+td #textoEtiqueta {
+    padding: 15px;
+    text-align: center;
+    align-items: center
+}
+
+#info {
+    text-align: center;
+    align-items: center
+}
+
+table.alta {
+    text-align: center;
+    align-items: center;
+    background-color: black;
+    opacity: 0.75;
+    /*  border-radius: 70px; */
+}
+
+form table {
+    border-radius: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
