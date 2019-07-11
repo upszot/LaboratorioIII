@@ -19,6 +19,18 @@ function ordenarAsc(p_array_json, p_key)
     });  
  }
 
+
+ function newDatoGOTvieja() {
+    return dato = {
+        id: null,
+        nombre: null,
+        apellido: null,
+        edad: null,
+        casa: null,
+        traidor: false
+    };
+} 
+
 function newDatoGOT() {
     return dato = {
         id: null,
@@ -100,16 +112,52 @@ function armarAlta() {
     formulario.className = 'frmAlta';
     var tabla = document.createElement('table');
     tabla.setAttribute('class', 'alta');
-
-    for (var key in newDatoGOT()) 
+    
+    var tr = document.createElement('tr');
+    for (var key in newDatoGOTvieja()) //despues arreglar
     {
-        var tr = document.createElement('tr');
+        // var tr = document.createElement('tr');
         if (personaElegida == null) {
-            tr.appendChild(crearFormulario(key));
+            console.log("bucle key: " + key);
+           // if(key!="guerrero" || key!="manipulador" || key!="diplomatico"  || key!="vengativo" || key!="lider"  || key!="ambicioso" )
+            //{
+                 tr.appendChild(crearFormulario(key));
+            //}
+           
         }
-        tabla.appendChild(tr);
+        // tabla.appendChild(tr);
     }
-   
+    tabla.appendChild(tr);
+            var div2 = document.createElement('div');           
+            div2.appendChild(agregarCheckBox("guerrero", false));
+            div2.append(agregarCheckBox("manipulador", false));
+            tabla.appendChild(div2);
+
+            var div3 = document.createElement('div');
+            div3.appendChild(agregarCheckBox("diplomatico", false));
+            div3.append(agregarCheckBox("vengativo", false));
+            tabla.appendChild(div3);
+
+            var div4 = document.createElement('div');
+            div4.appendChild(agregarCheckBox("lider", false));
+            div4.append(agregarCheckBox("ambicioso", false));
+            tabla.appendChild(div4);
+
+             
+
+//   <tr>
+//     <td>guerrero</td>
+//     <td>manipulador</td>
+//   </tr>
+//   <tr>
+//     <td>Eve</td>
+//     <td>Jackson</td>
+//   </tr>
+//   <tr>
+//     <td>John</td>
+//     <td>Doe</td>
+//   </tr>
+
     var btnAceptar = agregarBotonListener("aceptar",agregarPersona);
     var btnCancelar = agregarBotonListener("cancelar",volverInicio);
  
@@ -156,15 +204,28 @@ function crearFormulario(key, valor) {
             tr.appendChild(agregarCheckBox(key, valor));
             div.appendChild(tr);
             break;
-        case "guerrero":    
-        case "manipulador":
+        case "guerrero":  
+        case "manipulador":   
+            // div.setAttribute('class', 'tipoPersonaje');
+            // var tr = document.createElement('tr');
+            // tr.appendChild(agregarCheckBox(key, valor));
+            // div.appendChild(tr);
+            // break;
+       
         case "diplomatico":
         case "lider":
         case "vengativo":
-        case "ambicioso":            
-            var tr = document.createElement('tr');
-            tr.appendChild(agregarCheckBox(key, valor));
-            div.appendChild(tr);
+        case "ambicioso":   
+            // var tr = document.createElement('tr');
+
+            // tr.appendChild(agregarCheckBox("guerrero", valor));
+            // tr.append(agregarCheckBox("diplomatico", valor));
+            // tr.append(agregarCheckBox("vengativo", valor));
+
+            // tr.appendChild(agregarCheckBox("manipulador", valor));
+            // tr.append(agregarCheckBox("lider", valor));
+            // tr.append(agregarCheckBox("ambicioso", valor));
+            //  div.appendChild(tr);
             // div.appendChild(agregarSalto());
             break;
         
