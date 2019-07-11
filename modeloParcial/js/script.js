@@ -9,6 +9,8 @@ var personas = [];
 
 window.addEventListener('load', asignarManejadores, false);
 
+
+
 function asignarManejadores() {
 
     botonAlta = document.getElementById("btnAlta");
