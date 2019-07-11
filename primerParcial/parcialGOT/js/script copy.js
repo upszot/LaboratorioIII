@@ -26,13 +26,7 @@ function newDatoGOT() {
         apellido: null,
         edad: null,
         casa: null,
-        traidor: false,
-        guerrero: false,
-        manipulador: false,
-        diplomatico: false,
-        lider: false,
-        vengativo: false,
-        ambicioso: false
+        traidor: false
     };
 } 
 
@@ -153,21 +147,10 @@ function crearFormulario(key, valor) {
             break;
         case "traidor":
             var tr = document.createElement('tr');
-            tr.appendChild(agregarCheckBox(key, valor));
-            div.appendChild(tr);
-            break;
-        case "guerrero":    
-        case "manipulador":
-        case "diplomatico":
-        case "lider":
-        case "vengativo":
-        case "ambicioso":            
-            var tr = document.createElement('tr');
-            tr.appendChild(agregarCheckBox(key, valor));
+            tr.appendChild(agregarCheckBox("traidor", valor));
             div.appendChild(tr);
             // div.appendChild(agregarSalto());
             break;
-        
     }
     
     return div;
@@ -285,7 +268,6 @@ function agregarRadioButtons(valor, activo, nombre, name) {
 }
 
 function agregarCheckBox(valor, activo) {
-    console.log("check : " + valor);
     var td = document.createElement('td');
     td.appendChild(agregarLabel(valor));
     td.setAttribute('id', "textoEtiqueta");
