@@ -95,30 +95,24 @@ function armarAlta() {
     var tabla = document.createElement('table');
     tabla.setAttribute('class', 'alta');
 
-    console.log("entro en armarAlta");
-    for (var key in personas[0]) 
+    for (var key in newDatoGOT()) 
     {
         var tr = document.createElement('tr');
-
         if (personaElegida == null) {
             tr.appendChild(crearFormulario(key));
         }
         tabla.appendChild(tr);
-
     }
    
     var btnAceptar = agregarBotonListener("aceptar",agregarPersona);
     var btnCancelar = agregarBotonListener("cancelar",volverInicio);
  
-    tabla.appendChild(agregarSalto());
+    // tabla.appendChild(agregarSalto());
     tabla.appendChild(btnAceptar);
     tabla.appendChild(btnCancelar);
-
     formulario.appendChild(tabla);
-
     div.appendChild(formulario);
-    //div.appendChild(agregarSalto());     
-
+    //div.appendChild(agregarSalto());
 }
 
 
@@ -158,6 +152,7 @@ function crearFormulario(key, valor) {
             // div.appendChild(agregarSalto());
             break;
     }
+    
     return div;
 }
 
@@ -201,8 +196,6 @@ function cargarFormularioSeleccionado() {
             modificarPersona(persona01);
         }   );
 
-        tr.appendChild(btnModificar);
-
         var btnEliminar = agregarBotonListener("Eliminar",function() {
             eliminarPersona(personaElegida);
         } );
@@ -210,9 +203,9 @@ function cargarFormularioSeleccionado() {
             //si lo pongo asi no funciona bien
         // var btnEliminar = agregarBotonListener("Eliminar",eliminarPersona(personaElegida) );
 
+        tr.appendChild(btnModificar);
         tr.appendChild(btnEliminar);
         tabla.appendChild(tr);
-
         formulario.appendChild(tabla);
         div.appendChild(formulario);
         div.appendChild(agregarSalto());   
@@ -334,39 +327,32 @@ function ponerSpinner() {
     return spinner;
 }
 
+function getRadioButtons() {
+    return ['stark', 'targaryen', 'lanister'];
+}
+
 /* -------------- CONSTRUCTOR PERSONA -------------- */
-
-
 function newPersona(tieneID) {
-    var persona = {};
-    if (tieneID) {
-        persona.id = document.getElementById('id').value;
-    }
+    var persona = newDatoGOT();
+    
     persona.nombre = document.getElementById('nombre').value;
     persona.apellido = document.getElementById('apellido').value;
     persona.edad = document.getElementById('edad').value;
+    persona.traidor = document.getElementById('traidor').checked;
 
-    //cambia para adaptar///////////////////////////////////////
-    var resp = document.getElementById("stark").checked;
-    var resp2 = document.getElementById("targaryen").checked;
-    var resp3 = document.getElementById("lanister").checked;
-
-    if (resp == true) {
-        persona.casa = "stark";
-    } else if (resp2 == true) {
-        persona.casa = "targaryen";
-    } else {
-        persona.casa = "lanister";
+    if (tieneID) {
+        persona.id = document.getElementById('id').value;
     }
 
-    var resp = document.getElementById('traidor').checked;
-    if (resp) {
-        persona.traidor = true;
-    } else {
-        persona.traidor = false;
-    }
+    getRadioButtons().forEach(casa => {
+        if (document.getElementById(casa).checked) {
+            persona.casa = casa;
+        }
+    });
+
     return persona;
 }
+
 
 
 
