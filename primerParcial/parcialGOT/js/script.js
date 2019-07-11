@@ -354,8 +354,6 @@ function newPersona(tieneID) {
 }
 
 
-
-
 /* -------------- NODE.JS -------------- */
 
 function agregarPersona() {
