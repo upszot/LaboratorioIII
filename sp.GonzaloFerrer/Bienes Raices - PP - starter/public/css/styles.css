@@ -1,0 +1,63 @@
+.formulario {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.tabla {
+    margin: auto;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border-collapse: collapse;
+    /* width: 1300px; */
+}
+
+.tabla,
+.tabla th,
+.tabla td {
+    border: 1.5px solid black;
+}
+
+.tabla td {
+    text-align: center;
+}
+
+.formulario>* {
+    margin-bottom: 2px;
+}
+
+.divRadios{
+    display: flex;    
+}
+
+.divRadios>div{
+    margin: 2px 8px;
+    margin-bottom: 15px;
+}
+
+
+.formulario>input {
+    border: 1px solid black;
+    /* border-radius: 5px; */
+    margin-bottom: 8px;
+    
+    /* background-color: antiquewhite; */
+}
+
+.divBotones{
+    margin: 40px 0px;
+}
+
+
+
+.divCheckbox{
+    margin: 20px 0px 20px;
+    border: 1px solid black;
+    border-radius: 3px;
+    
+}
+
+.divContainer{
+    font-weight:bold;
+    text-transform: capitalize;
+}
